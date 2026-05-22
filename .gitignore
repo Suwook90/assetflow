@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+.env
+.env.*
+dist/
+installer-output/
+*.exe
+*.zip
+*:Zone.Identifier
