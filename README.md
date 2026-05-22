@@ -14,7 +14,7 @@
 https://github.com/Suwook90/assetflow/releases/latest
 
 현재 공개 버전:
-https://github.com/Suwook90/assetflow/releases/tag/v0.1.3
+https://github.com/Suwook90/assetflow/releases/tag/v1.0.0
 
 ## 저장소 구성
 
@@ -57,7 +57,7 @@ https://github.com/Suwook90/assetflow/releases/tag/v0.1.3
 
 ## 라이선스
 
-Copyright (c) 2026 archi.
+Copyright (c) 2026 Suwook90.
 
 파일정리함(AssetFlow)은 [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/)으로 배포됩니다.
 
