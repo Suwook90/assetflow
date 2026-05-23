@@ -8,29 +8,26 @@
 
 ## 다운로드
 
-[Windows 설치 파일 다운로드](https://github.com/Suwook90/assetflow/releases/latest/download/AssetFlowSetup.exe)
+[Windows 설치 파일 다운로드](https://github.com/Suwook90/assetflow/releases/download/v1.1.1/AssetFlowSetup.exe)
 
 최신 릴리스 페이지:
 https://github.com/Suwook90/assetflow/releases/latest
 
 현재 공개 버전:
-https://github.com/Suwook90/assetflow/releases/tag/v1.0.0
-
-## 저장소 구성
-
-- `Suwook90/assetflow`: 공개 다운로드/소개용 저장소입니다. 소스코드는 포함하지 않습니다.
-- `Suwook90/assetflow-private`: 비공개 소스/빌드 작업용 저장소입니다.
+https://github.com/Suwook90/assetflow/releases/tag/v1.1.1
 
 ## 주요 기능
 
-- 폴더 안의 파일과 이미지를 한 화면에서 미리보기
-- 왼쪽 폴더 목록, 중앙 미리보기/결과 그리드, 오른쪽 이동 대상 폴더 패널
-- 다중 선택, 드래그 선택, `Del`, `F2`, 우클릭 메뉴 지원
-- 이미지 뷰어/이동, 이름/확장자 변경, 이미지 용량 압축, 이미지 해상도 변경, 문서 변경 모드
-- 많은 이미지에서 빠른 화살표 이동 시 미리보기를 안정적으로 갱신
-- 문서 변경 모드에서 일괄 단어 변경, 개별 편집/저장, 목록 비우기와 실제 삭제 지원
-- JPG, PNG, WebP, HDR, EXR, TXT, JSON 등 다양한 파일 형식 확인
-- EXR depth map 흑백 미리보기, 큰 폴더 순차 로딩, 대상 폴더 저장
+- 파일 뷰어/이동, 이름/확장자 변경, 이미지 용량 압축, 이미지 해상도 변경, AI 업스케일링, 문서 변경, 로컬 AI 도우미
+- 왼쪽 폴더 목록, 중앙 미리보기/결과 그리드, 오른쪽 대상 폴더 및 AI 에이전트 패널
+- 다중 선택, 드래그 선택, `Del`, `F2`, 우클릭 메뉴, `Ctrl+휠` 아이콘 크기 조정
+- JPG, PNG, WebP, HDR/HDRI, EXR, TXT, JSON, MD, CSV 등 다양한 파일 확인
+- EXR depth map 흑백 미리보기, 큰 폴더 순차 로딩, 보이는 썸네일 우선 로딩
+- 이름/확장자 변경 규칙, 압축 용량 기준, 해상도 프리셋, 출력 폴더 저장/덮어쓰기
+- AI 업스케일링: Real-ESRGAN 기본 모델, 1K/2K/4K 제한, Sharp 후처리, ncnn/ONNX 지원 모델 설치
+- 업스케일 `선택 사용` 탭에서 설치 모델 before/after 미리보기, `모델 찾기` 탭에서 지원 모델 검색/설치
+- 문서 변경 모드에서 개별 편집/저장, 단어 일괄 변경/삭제, `.bak` 백업
+- 선택형 AI Pack: 로컬 AI 에이전트가 모드별 작업 계획과 명령 적용을 보조
 
 ## 화면 미리보기
 
@@ -42,18 +39,31 @@ https://github.com/Suwook90/assetflow/releases/tag/v1.0.0
 | --- | --- |
 | ![이름과 확장자 일괄 변경](docs/screenshots/03-rename.png) | ![이미지 용량 압축](docs/screenshots/04-compress.png) |
 
-| 이미지 해상도 변경 | 문서 변경 |
+| 이미지 해상도 변경 | AI 업스케일링 모델 선택 |
 | --- | --- |
-| ![이미지 해상도 변경](docs/screenshots/05-resize.png) | ![문서 미리보기와 일괄 변경](docs/screenshots/06-document.png) |
+| ![이미지 해상도 변경](docs/screenshots/05-resize.png) | ![AI 업스케일링과 설치 모델 선택](docs/screenshots/06-upscale.png) |
+
+| 업스케일 모델 찾기 | 문서 변경/AI 문서 에이전트 |
+| --- | --- |
+| ![OpenModelDB 기반 업스케일 모델 찾기](docs/screenshots/09-upscale-model-search.png) | ![문서 미리보기와 AI 문서 에이전트](docs/screenshots/07-document.png) |
+
+| AI 도우미 |
+| --- |
+| ![로컬 AI 도우미](docs/screenshots/08-ai-agent.png) |
 
 ## 설치 안내
 
-1. [AssetFlowSetup.exe](https://github.com/Suwook90/assetflow/releases/latest/download/AssetFlowSetup.exe)를 다운로드합니다.
+1. [AssetFlowSetup.exe](https://github.com/Suwook90/assetflow/releases/download/v1.1.1/AssetFlowSetup.exe)를 다운로드합니다.
 2. 설치 파일을 실행합니다.
 3. Windows SmartScreen 경고가 뜨면 `추가 정보` 후 실행을 선택합니다.
 4. 시작 메뉴 또는 바탕화면의 `파일정리함` 바로가기로 실행합니다.
 
 현재 설치 파일은 코드 서명 인증서로 서명되지 않았기 때문에 Windows SmartScreen 경고가 표시될 수 있습니다.
+
+## 저장소 구성
+
+- `Suwook90/assetflow`: 공개 다운로드/소개용 저장소입니다. 소스코드는 포함하지 않습니다.
+- `Suwook90/assetflow-private`: 비공개 소스/빌드 작업용 저장소입니다.
 
 ## 라이선스
 
